@@ -1,0 +1,10 @@
+name = "MultiLinearInterpolations"
+uuid = "71cc9eaa-fb72-4ea8-a7f0-cc62a524c454"
+authors = ["fjebaker <fergusbkr@gmail.com>"]
+version = "0.1.0"
+
+[weakdeps]
+ForwardDiff = "f6369f11-7733-5829-9624-2563aa707210"
+
+[extensions]
+MultiLinearInterpolationsForwardDiffExt = "ForwardDiff"
