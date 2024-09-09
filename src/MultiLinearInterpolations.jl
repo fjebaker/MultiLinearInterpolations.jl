@@ -1,6 +1,6 @@
 module MultiLinearInterpolations
 
-@fastmath _linear_interpolate(y1, y2, θ) = (1 - θ) * y1 + θ * y2
+_linear_interpolate(y1, y2, θ) = muladd((1 - θ), y1, θ * y2)
 function _linear_interpolate!(
     out::AbstractArray{<:Number},
     y1::Union{<:Number,AbstractArray{<:Number}},
